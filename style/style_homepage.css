@@ -116,7 +116,8 @@ body {
 .accordion-body ul {
   margin: 10px 0 0;
   padding-left: 20px;
-  margin-left: 31%;
+  margin-left: 3%;
+
 }
 
 .accordion-body li {
@@ -124,8 +125,11 @@ body {
   margin-left: 31%;
 }
 
-.accordion-body strong {
-    margin-left: 30%;
+.accordion-item strong {
+      display: block;
+    text-align: center;
+    align-items: center;
+
 }
 
 .accordion-item img {

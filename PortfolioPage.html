@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style_homepage.css">
+  <title>Portfolio</title>
+</head>
+<body>
+ 
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="PortfolioPage.html" class="active">Portfolio</a>
+    <a href="SkillPage.html">Skills</a>
+    <a href="ContactPage.html">Contact</a>
+    <a href="GitHubPage.html">GitHub</a>
+    <button id="themeToggle" class="theme-toggle">Dark Mode</button>
+  </div>
+
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-ite">
+      <h1 class="accordion-header">Portfolio</h1>
+      <p>This page is about Eungyeol's projects and creative works</p>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active-filter" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="java">Java</button>
+      <button class="filter-btn" data-filter="service">Service</button>
+      <button class="filter-btn" data-filter="webdesign">Web Design</button>
+      <button class="filter-btn" data-filter="webdev">Web Dev</button>
+      <button class="filter-btn" data-filter="video">Video</button>
+      <button class="filter-btn" data-filter="editorial">Editorial</button>
+    </div>
+
+    <div class="accordion-item project-card" data-category="java">
+      <h2 class="accordion-header">Drawing App</h2>
+      <img src="images/drawingapp.png" alt="Drawing App preview" width="300">
+      <div class="accordion-body">
+        <strong>Drawing editor with diverse functions, created in Java.</strong>
+      </div>
+      <button>
+        <a href="https://github.com/s21versurfer/HelloMyWorld/blob/main/Programming/DrawingEditor%20Beta3.zip" target="_blank">Check it out</a>
+      </button>
+    </div>
+
+    <div class="accordion-item project-card" data-category="service">
+      <h2 class="accordion-header">Down to Earth</h2>
+      <img src="images/downtoearth.png" alt="Down to Earth preview" width="300">
+      <div class="accordion-body">
+        <strong>Future-oriented social media platform with a healthy and sustainable concept.</strong>
+      </div>
+      <button>
+        <a href="https://github.com/s21versurfer/HelloMyWorld/blob/main/IT%20Service%20Competetion/Social%20Media%20Stadistics%20Thesis%20by%20Slidesgo.pdf" target="_blank">Check it out</a>
+      </button>
+    </div>
+
+    <div class="accordion-item project-card" data-category="service">
+      <h2 class="accordion-header">Ex-Track</h2>
+      <img src="images/extract.png" alt="Ex-Track preview" width="600">
+      <div class="accordion-body">
+        <strong>Service proposal for improving user experience on YouTube Music.</strong>
+      </div>
+      <button>
+        <a href="https://github.com/s21versurfer/HelloMyWorld/blob/main/IT%20Service%20Competetion/%ED%94%84%EB%A0%88%EC%A0%A0%ED%85%8C%EC%9D%B4%EC%85%98%201.pdf" target="_blank">Check it out</a>
+      </button>
+    </div>
+
+    <div class="accordion-item project-card" data-category="webdesign">
+      <h2 class="accordion-header">Kinside</h2>
+      <img src="images/ki.png" alt="Kinside preview" width="300">
+      <div class="accordion-body">
+        <strong>Localized global community and language exchange app designed in Figma.</strong>
+      </div>
+    </div>
+
+    <div class="accordion-item project-card" data-category="webdev">
+      <h2 class="accordion-header">Collectif Han</h2>
+      <img src="images/colhan.png" alt="Collectif Han preview" width="300">
+      <div class="accordion-body">
+        <strong>Interactive website for group introduction and visual storytelling.</strong>
+      </div>
+    </div>
+
+    <div class="accordion-item project-card" data-category="webdev">
+      <h2 class="accordion-header">Mate Match</h2>
+      <img src="images/mm.png" alt="Mate Match preview" width="300">
+      <div class="accordion-body">
+        <strong>Roommate matching app concept with safety-oriented features.</strong>
+      </div>
+    </div>
+
+    <div class="accordion-item project-card" data-category="webdev">
+      <h2 class="accordion-header">Popcode</h2>
+      <img src="images/po.png" alt="Popcode preview" width="300">
+      <div class="accordion-body">
+        <strong>Website concept for beginner-friendly coding education.</strong>
+      </div>
+    </div>
+
+    <div class="accordion-item project-card" data-category="webdev">
+      <h2 class="accordion-header">World Web</h2>
+      <img src="images/wo.png" alt="World Web preview" width="300">
+      <div class="accordion-body">
+        <strong>Website visualizing global economy level and cultural engagement.</strong>
+      </div>
+    </div>
+
+    <div class="accordion-item project-card" data-category="video">
+      <h2 class="accordion-header">ITM Northumbria University Vlog</h2>
+      <img src="images/nuvlog.png" alt="Northumbria vlog preview" width="300">
+      <div class="accordion-body">
+        <strong>University vlog project directed and filmed for the ITM vlog competition.</strong>
+      </div>
+    </div>
+
+    <div class="accordion-item project-card" data-category="video">
+      <h2 class="accordion-header">2022 STISS Mubflat Tour Vlog</h2>
+      <img src="images/stiss1.png" alt="STISS vlog preview" width="300">
+      <div class="accordion-body">
+        <strong>Creative direction and video production for STISS event content.</strong>
+      </div>
+    </div>
+
+    <div class="accordion-item project-card" data-category="video">
+      <h2 class="accordion-header">2022 STISS Main Video</h2>
+      <img src="images/stiss2.png" alt="STISS main video preview" width="300">
+      <div class="accordion-body">
+        <strong>Main promotional video project with event-based storytelling and editing.</strong>
+      </div>
+    </div>
+
+    <div class="accordion-item project-card" data-category="editorial">
+      <h2 class="accordion-header">The SeoulTech</h2>
+      <img src="images/newspaper.png" alt="The SeoulTech newspaper preview" width="300">
+      <div class="accordion-body">
+        <strong>Editorial and media work for SeoulTech’s English-language newspaper.</strong>
+      </div>
+    </div>
+
+    <div class="accordion-item project-card" data-category="editorial">
+      <h2 class="accordion-header">Editorial Design & Stickers</h2>
+      <img src="images/sticker1.png" alt="Sticker editorial design preview" width="300">
+      <div class="accordion-body">
+        <strong>Visual content and editorial-style graphic work using character and merchandise concepts.</strong>
+      </div>
+    </div>
+  </div>
+
+  <script src="script/main.js"></script>
+  <script src="script/portfolio.js"></script>
+</body>
+</html>

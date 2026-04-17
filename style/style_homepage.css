@@ -1,0 +1,418 @@
+/* 기본 설정 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #f4f7fb;
+  color: #222;
+
+}
+
+/* 상단 네비게이션 */
+.topnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #1f2937;
+  padding: 14px 10px;
+  gap: 10px;
+}
+
+.topnav a {
+  color: #f9fafb;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+}
+
+.topnav a:hover {
+  background-color: #374151;
+  transform: translateY(-2px);
+}
+
+.topnav a.active {
+  background-color: #2563eb;
+}
+
+/* 전체 콘텐츠 영역 */
+.accordion {
+  max-width: 900px;
+  margin: 40px auto 20px;
+  padding: 0 16px;
+}
+
+.accordion-ite {
+  background: #ffffff;
+  margin-bottom: 20px;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+
+}
+
+/* 각 섹션 카드 */
+.accordion-item {
+  background: #ffffff;
+  margin-bottom: 20px;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+
+}
+
+/* 제목 */
+.accordion-ite h1 {
+  margin-top: 0;
+  color: #111827;
+
+}
+
+
+.accordion-item h1,
+.accordion-item h2 {
+  margin-top: 0;
+  color: #111827;
+  margin-left: 30%;
+}
+
+.accordion-item h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.accordion-ite img {
+    height: 300px;
+    text-align: center;
+    align-items: center;
+}
+
+.accordion-item h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  border-left: 5px solid #2563eb;
+  padding-left: 12px;
+  
+}
+
+/* 본문 */
+.accordion-body {
+  font-size: 1rem;
+  color: #374151;
+
+
+  
+}
+
+.accordion-body ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  margin-left: 31%;
+}
+
+.accordion-body li {
+  margin-bottom: 8px;
+  margin-left: 31%;
+}
+
+.accordion-body strong {
+    margin-left: 30%;
+}
+
+.accordion-item img {
+    margin-left: 30%;
+}
+
+.accordion-item button {
+    margin-left: 30%;
+}
+
+/* 강조 문장 */
+strong {
+  display: inline-block;
+  margin-top: 8px;
+  color: #4b5563;
+  text-align: center;
+}
+
+/* 버튼 영역 */
+.button-group {
+  max-width: 900px;
+  margin: 20px auto 50px;
+  padding: 0 16px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.button-group a {
+  text-decoration: none;
+}
+
+.accordion-button {
+
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.bottom {
+    text-align: center;
+}
+
+
+.accordion-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* 마지막 감사 문구 */
+.footer-text {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  padding: 0 16px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* 반응형: 0 ~ 480px */
+@media (max-width: 480px) {
+  .topnav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .topnav a {
+    text-align: center;
+  }
+
+  .accordion-item {
+    padding: 18px;
+  }
+
+  .accordion-item h1 {
+    font-size: 1.6rem;
+  }
+
+  .accordion-item h2 {
+    font-size: 1.2rem;
+  }
+
+  .accordion-button {
+    width: 100%;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+}
+
+/* 반응형: 481 ~ 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .accordion-item {
+    padding: 22px;
+  }
+
+  .accordion-item h1 {
+    font-size: 1.8rem;
+  }
+
+  .accordion-item h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* 반응형: 769px 이상 */
+@media (min-width: 769px) {
+  .accordion-item h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* 게이지 바 전체 */
+.skill-bar {
+  margin: 10px auto;
+  width: 830px;
+  height: 20px;
+  background-color: #dbeafe; /* 연한 파랑 */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* 채워지는 부분 */
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: white;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 20px;
+  border-radius: 10px;
+}
+
+.accordion-header img {
+  margin-left:10px;
+  margin-bottom:-5px;
+}
+
+.theme-toggle {
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background-color: #1d4ed8;
+}
+
+body.dark-mode {
+  background: #111827;
+  color: #f9fafb;
+}
+
+body.dark-mode .accordion-ite,
+body.dark-mode .accordion-item {
+  background: #1f2937;
+  color: #f9fafb;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .accordion-item h1,
+body.dark-mode .accordion-item h2,
+body.dark-mode .accordion-ite h1,
+body.dark-mode strong,
+body.dark-mode .accordion-body,
+body.dark-mode p,
+body.dark-mode li {
+  color: #f9fafb;
+}
+
+.filter-bar {
+  max-width: 900px;
+  margin: 0 auto 20px;
+  padding: 0 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  border: none;
+  background-color: #e5e7eb;
+  color: #111827;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+}
+
+.active-filter {
+  background-color: #2563eb;
+  color: white;
+}
+
+.github-profile {
+  margin-top: 20px;
+}
+
+.profile-card {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.github-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 240px;
+}
+
+.repo-status {
+  margin-bottom: 20px;
+  color: #6b7280;
+}
+
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.repo-card {
+  background: #f9fafb;
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.repo-card h3 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.repo-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.error-text {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+body.dark-mode .repo-card {
+  background: #111827;
+  border: 1px solid #374151;
+}
+
+body.dark-mode .repo-card h3,
+body.dark-mode .repo-card p,
+body.dark-mode .repo-link {
+  color: #f9fafb;
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .theme-toggle {
+    width: 100%;
+  }
+}

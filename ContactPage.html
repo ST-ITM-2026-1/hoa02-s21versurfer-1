@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="style/style_homepage.css">
+  <link rel="stylesheet" href="style/contact.css">
+</head>
+<body>
+
+  <nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="PortfolioPage.html">Portfolio</a>
+    <a href="SkillPage.html">Skills</a>
+    <a class="active" href="ContactPage.html">Contact</a>
+  </nav>
+
+  <main class="contact-page">
+    <section class="contact-card">
+      <h1>Contact Eungyeol</h1>
+      <p class="contact-desc">
+        Feel free to leave a message for hiring, business, networking, or questions.
+      </p>
+
+      <form id="contactForm" class="contact-form">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address">
+
+        <label for="purpose">Purpose</label>
+        <select id="purpose" name="purpose">
+          <option value="">Select a purpose</option>
+          <option value="Hiring">Hiring</option>
+          <option value="Business">Business</option>
+          <option value="Interaction">Interaction</option>
+          <option value="Question">Question</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message here"></textarea>
+
+        <div class="button-row">
+          <button type="submit" class="submit-btn">Send Message</button>
+          <button type="reset" class="reset-btn">Reset</button>
+        </div>
+
+        <p id="formStatus" class="form-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Popup -->
+  <div id="popupOverlay" class="popup-overlay hidden">
+    <div class="popup-box">
+      <h2 id="popupTitle">Message Status</h2>
+      <p id="popupMessage">Your message was sent successfully.</p>
+      <button id="closePopup" class="popup-btn">Close</button>
+    </div>
+  </div>
+
+  <script src="script/contact.js"></script>
+</body>
+</html>

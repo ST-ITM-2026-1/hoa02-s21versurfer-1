@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style_homepage.css">
+  <title>My GitHub</title>
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="PortfolioPage.html">Portfolio</a>
+    <a href="SkillPage.html">Skills</a>
+    <a href="ContactPage.html">Contact</a>
+    <a href="GitHubPage.html" class="active">GitHub</a>
+    <button id="themeToggle" class="theme-toggle">Dark Mode</button>
+  </div>
+
+  <div class="accordion">
+    <div class="accordion-ite">
+      <h1 class="accordion-header">My GitHub</h1>
+      <p>Public GitHub profile and repositories of Eungyeol Kim</p>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">Profile</h2>
+      <div id="githubProfile" class="github-profile">
+        <p>Loading profile...</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">Repositories</h2>
+      <div id="repoStatus" class="repo-status">Loading repositories...</div>
+      <div id="repoContainer" class="repo-grid"></div>
+    </div>
+  </div>
+
+  <script src="script/main.js"></script>
+  <script src="script/github.js"></script>
+</body>
+</html>
